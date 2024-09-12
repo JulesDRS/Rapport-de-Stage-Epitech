@@ -1,9 +1,10 @@
+@import "style/styles_epitech_stage.less"
+
 # Rapport-de-Stage-Epitech
 Repport de Stage Epitech Tek1 fait en MarkDown.
 
 --------------------------------------------------------
 
-@import "style/styles symexo.less"
 
 Jules de Rus
 Tek 2
