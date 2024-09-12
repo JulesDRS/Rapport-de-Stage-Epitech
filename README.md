@@ -1,4 +1,4 @@
-@import "style/styles_epitech_stage.less"
+<link href="style/styles_epitech_stage.less" rel="stylesheet"></link>
 
 # Rapport-de-Stage-Epitech
 Repport de Stage Epitech Tek1 fait en MarkDown.
