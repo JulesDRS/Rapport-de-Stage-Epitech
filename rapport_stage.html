@@ -1,0 +1,799 @@
+<!DOCTYPE html><html><head>
+      <title>rapport_stage</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\jderus\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.14\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<p><style>@media screen {
+  .markdown-preview {
+    background-color: #000000;
+    padding: 50px !important;
+    font-family: ProFontWindows Nerd Font Mono;
+  }
+}
+svg {
+  text-align: center;
+}
+h1 {
+  color: #ff9500 !important;
+  text-align: center;
+  padding: 10px 10px 5px 10px !important;
+  font-size: 30px;
+}
+h2 {
+  color: #ff9500 !important;
+  padding-top: 5%;
+  border-bottom: 3px solid #ff9500 !important;
+  text-align: left;
+  break-before: always;
+  font-size: 28px;
+}
+h3 {
+  color: #ff9500 !important;
+  font-style: italic;
+  text-align: left;
+  border-bottom: none;
+  font-size: 26px;
+}
+h4 {
+  color: #ff9500 !important;
+  padding-top: 2%;
+  text-align: left;
+  border-bottom: none;
+  font-size: 24px;
+}
+h5 {
+  color: #ff9500 !important;
+  padding-top: 1%;
+  text-align: left;
+  font-size: 22px;
+}
+table tr th {
+  font-weight: bold;
+  background-color: #ff9500 !important;
+  color: #000000 !important;
+  text-align: center !important;
+  margin: 0;
+  padding: 6px 13px;
+}
+td {
+  background-color: #202020;
+}
+ul,
+ol,
+li {
+  margin: 5px 0 !important;
+  color: #c2c2c2;
+  text-align: left;
+  font-size: 20px;
+}
+a {
+  color: #ff9500 !important;
+  font-weight: bold !important;
+  text-decoration: underline !important;
+}
+p {
+  color: #c2c2c2;
+  text-align: left;
+  font-size: 18px;
+}
+li {
+  list-style: none;
+}
+li:before {
+  content: '⇀          ';
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 20px;
+  color: #ff0000;
+}
+strong {
+  color: #ff9500 !important;
+}
+em {
+  color: #B37440 !important;
+  font-weight: bold;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+.info-note {
+  background-color: #c2c2c2;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
+.warning-note {
+  background-color: darkorange;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
+.danger-note {
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  padding: 8px;
+}
+.info-zone {
+  color: #5964ff;
+  border-radius: 5px;
+  border: 1px solid #5964ff;
+  padding: 8px;
+}
+.warning-zone {
+  color: darkorange;
+  border-radius: 5px;
+  border: 1px solid darkorange;
+  padding: 8px;
+}
+.danger-zone {
+  color: red;
+  border-radius: 5px;
+  border: 1px solid red;
+  padding: 8px;
+}
+.success-note {
+  background-color: #00ff15;
+  color: #000000;
+  border-radius: 5px;
+  padding: 8px;
+}
+@media print {
+  .sm-size {
+    font-size: 15px;
+  }
+  .xs-size {
+    font-size: 14px;
+  }
+}
+</style></p>
+<p>Jules de Rus<br>
+Tek 2</p>
+<h1 id="rapport-de-stage---symexo-balma">Rapport de Stage - Symexo Balma </h1>
+<center style="color: rgb(194, 194, 194)"><b>Participation aux projets internes de transformation numérique chez SYMEXO</b><br>
+Stage de deuxième année<br>15 Juillet 2024 - 13 Décembre 2024<center>
+<p><img src="assets/images/Symexo.png" alt="Symexo Balma" width="50%" style="display: block; margin: 0 auto"></p>
+<p><img src="assets/images/Epitech.png" alt="Epitech Toulouse" style="display: block; margin: 0 auto"></p>
+<center style="color: rgb(194, 194, 194)"><br><br> Symexo <br> 2 rue André Citroën <br> 31130 Balma </center>
+<h2 id="sommaire">Sommaire </h2>
+<ul>
+<li>Présentation de la société et des Projets
+<ul>
+<li><a href="#Contexte">Un peu de contexte...</a>
+<ul>
+<li><a href="#Symexo">Symexo</a>
+<ul>
+<li><a href="#Services">Services</a></li>
+<li><a href="#Hierarchie">Hiérarchie</a></li>
+<li><a href="#ExemplesProjets">Exemples de Projets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#MaMission">Mes mission...</a>
+<ul>
+<li><a href="#RefonteEspaceClient">Refonte de l'espace client Symexo</a></li>
+<li><a href="#ModelesNotifications">Modèles de notifications</a>
+<ul>
+<li><a href="#InterfaceGLPI">Interface GLPI</a></li>
+<li><a href="#Modeles">Modèles</a></li>
+</ul>
+</li>
+<li><a href="#GenerationDocuments">Génération et valorisation automatique de Documents</a>
+<ul>
+<li><a href="#LogicielsPrealables">Logiciels Préalables</a></li>
+<li><a href="#LogicielsPrincipaux">Logiciels Principaux</a></li>
+<li><a href="#DeroulementInstallation">Déroulement de l'installation</a>
+<ul>
+<li><a href="#VM">Machine Virtuelle</a></li>
+<li><a href="#Docker">Docker</a></li>
+<li><a href="#Portainer">Portainer</a></li>
+<li><a href="#Gitea">Gitea</a></li>
+<li><a href="#GiteaActions">Gitea Actions</a></li>
+<li><a href="#SonarQube">SonarQube</a></li>
+<li><a href="#Nexus">Sonatype Nexus Repository Manager</a></li>
+</ul>
+</li>
+<li><a href="#ApresInstallation">Après installation</a>
+<ul>
+<li><a href="#Workflow">Workflow Gitea</a></li>
+<li><a href="#FonctionnementEcosysteme">Fonctionnement de l'écosystème</a></li>
+<li><a href="#ProblemesUsineV2">Problèmes rencontrés</a></li>
+</ul>
+</li>
+<li><a href="#ConclusionUsineV2">Conclusions</a></li>
+</ul>
+</li>
+<li><a href="#AutresMissions">Autres missions</a>
+<ul>
+<li>UNAPEI 60</li>
+<li>Bug Note de Frais</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a name="Contexte" href=""></a></p>
+<h2 id="un-peu-de-contexte">Un peu de contexte… </h2>
+<p><a name="Symexo" href=""></a></p>
+<h3 id="symexo">Symexo </h3>
+<p>Dans le cadre de mon stage j’ai pu intégrer <strong>Symexo Balma</strong>, cette entreprise dont le siège social se trouve à Balma et qui est située aussi à Montpellier, Paris, Beauvais, Angers Poitiers, Niort, Cahors, Foix, Chalon-Sur-Saône, Nantes, Rodez, Bordeaux et Metz, est <strong>spécialisée dans l’infogérance</strong> : l’infogérance consiste à gérer les tâches informatiques confiées par une entreprise à un prestataire extérieur, ici, c’est Symexo. Mais Symexo s’occupe aussi d’<strong>équiper ses clients</strong> en matériel informatique tout en <strong>les infogérant</strong> et leur offrant un <strong>support de qualité</strong> ; tout ceci en restant le plus sobre numériquement et écologiquement.<br>
+<a name="Services" href=""></a></p>
+<h3 id="services">Services </h3>
+<p>Dans cette entreprise, nous sommes divisés en <strong>différents services</strong> allant des services d’<strong>Entretien et de Support</strong>, jusqu’au service de <strong>Commerce et Marketing</strong> en passant par la <strong>Cybersécurité</strong> et la <strong>Gestion de Projet</strong> et bien plus encore. A ces services viennent s'ajouter des filiales comme <strong>Sympro</strong>, qui est plus dédiée aux indépendants. J'ai intégré le service de la <strong>Transformation Numérique</strong>, dont le but est d’offrir une expérience informatique plus propre, plus belle, plus simple, intuitive et pratique… que ce soit aux clients ou aux autres services de l’entreprise.<br>
+<a name="Hierarchie" href=""></a></p>
+<h3 id="hiérarchie">Hiérarchie </h3>
+<p>Le service est composé de 3 développeurs, <strong>Julien ALBURQUERQUE</strong> qui est aussi le responsable du service, <strong>Julien CORDEAU</strong> ingénieur développeur et <strong>moi-même</strong>, le stagiaire. Il y a aussi <strong>Marion GAUDEL</strong> qui occupe un poste d'Assistante Fonctionnelle Métier et enfin <strong>Céline MONEL</strong> qui est Formatrice/Cheffe de projets. Le Président Directeur Général est <strong>Stéphane VINAZZA</strong> et le Directeur Général Adjoint, <strong>Marc TAMBURRINI</strong>.</p>
+<div style="position: relative; width: 100%; padding-top: 45.0000%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://www.canva.com/design/DAGP4CIW76Q/dGf3DSz0UlBCjMl5uVEpWw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https://www.canva.com/design/DAGP4CIW76Q/dGf3DSz0UlBCjMl5uVEpWw/view?utm_content=DAGP4CIW76Q&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Hiérarchie</a> par Jules de Rus
+<p><a name="ExemplesProjets" href=""></a></p>
+<h3 id="exemples-de-projets">Exemples de Projets </h3>
+<ul>
+<li>Client <strong>AltiService</strong> : Plateforme Web type intra basée sur Visiativ Process.</li>
+<li>Client <a href="https://www.commandes.terramair.com/">Terra Maïr</a> : Plateforme Web basée sur Visiativ Process pour la réservation de viennoiseries ou boulangeries en gros.</li>
+<li><strong>Symfoot</strong> : Application Web et mobile de classement et d'enregistrement de parties de Babyfoot en interne (système de saison, de palier...)</li>
+</ul>
+<p><a name="MaMission" href=""></a></p>
+<h2 id="mes-mission">Mes mission... </h2>
+<p>Dans ce service, j’ai pu participer à différents de projets dont deux principaux :</p>
+<p><a name="RefonteEspaceClient" href=""></a></p>
+<h3 id="refonte-de-lespace-client-symexo">Refonte de l'espace client Symexo </h3>
+<table>
+<thead>
+<tr>
+<th>Langages/Outils Utilisés</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTML</td>
+<td>Création de documents, souvent des pages Web</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td>Mise en forme de documents HTML</td>
+</tr>
+<tr>
+<td>GLPI</td>
+<td>(Gestionnaire Libre de Parc Informatique), logiciel de gestion des services/parcs informatiques</td>
+</tr>
+<tr>
+<td>Balises GLPI</td>
+<td>Balises de conditionnalité et de récupération d'informations</td>
+</tr>
+<tr>
+<td>Visiativ Process</td>
+<td>Logiciel d'automatisation et gestion de processus métier</td>
+</tr>
+<tr>
+<td>JAVA</td>
+<td>langage de programmation polyvalent, utilisé pour développer une large gamme d'applications et de systèmes.</td>
+</tr>
+</tbody>
+</table>
+<p>Quand un client <strong>commande du Matériel</strong>, nous devons lui <strong>livrer</strong>, pour cela nous devons <strong>remplir un bon de livraison</strong> puis des <strong>fiches de livraison</strong> avec les informations le concernant. Avant, les informations étaient <strong>rentrées à la main</strong>, maintenant, les fiches de livraisons sont <strong>générées automatiquement</strong> à partir du bon de livraison.</p>
+<p>Dans l'espace client Symexo, les clients peuvent <strong>signaler des incidents</strong>, des <strong>problèmes</strong> ou autre sur le matériel ou les prestations que nous leur avons fournies. Pour cela, nous mettons en place un <strong>suivi par mail</strong> sous forme de notifications à chaque mise à jour des tickets ouverts.</p>
+<p><a name="ModelesNotifications" href=""></a></p>
+<h4 id="modèles-de-notifications">Modèles de notifications </h4>
+<table>
+<thead>
+<tr>
+<th>Langages/Outils Utilisés</th>
+<th>Utilité</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HTML</td>
+<td>Création du corp des notifications</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td>Mise en forme des notifications</td>
+</tr>
+<tr>
+<td>GLPI</td>
+<td>Utilisation du service de gestion de tickets et de notifications</td>
+</tr>
+<tr>
+<td>Balises GLPI</td>
+<td>Conditionnalité d'affichage et récupération d'informations nécessaire au remplissage des notifications</td>
+</tr>
+</tbody>
+</table>
+<p>Quand les clients ouvrent des tickets sur l'espace client, nous mettons en place un <strong>suivi par notifications mail</strong>.<br>
+J'ai dû refaire les notification de zéro en mettant en place des modèles <strong>qui s'adaptent</strong> via des conditions aux différents types de notifications <em>(ouverture du ticket, mise à jour du ticket, solution proposée, solution approuvée et enfin clôture du ticket)</em>. J'ai fait <strong>deux modèles de notifications</strong>, un seulement pour la clôture et un pour toutes les autres actions.<br>
+Pour cela, j'ai utilisé le logiciel <strong>GLPI</strong> <em>(Gestionnaire Libre de Parcs Informatiques)</em> qui m'a bien facilité les choses car il est aussi fait pour ce genre de tâche... Cependant j'ai tout de même rencontré quelques problèmes dont nous parlerons plus loin.</p>
+<p><a name="InterfaceGLPI" href=""></a></p>
+<h5 id="interface-glpi">Interface GLPI </h5>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/GLPI/GLPI.png" alt="Description de l'image" style="margin-right: 15px; width: 70%">
+  <p>
+    Voici l'interface qui va nous permettre de <b style="color: rgb(255, 149, 0)">modifier le modèle de notification sélectionné</b>, nous avons plusieurs options dans chaque menu ; ici nous pouvons lui donner un <b style="color: rgb(255, 149, 0)">nom</b>, le <b style="color: rgb(255, 149, 0)"> classer dans un type</b>, <b style="color: rgb(255, 149, 0)">insérer des commentaires</b> mais surtout du <b style="color: rgb(255, 149, 0)">CSS</b>, le langage qui va permettre de <b style="color: rgb(255, 149, 0)">donner un style à notre mail</b>. Aussi, nous avons un menu "Traduction de modèle" auquel nous allons nous intéresser ci-après.
+  </p>
+</div><br>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/GLPI/GLPIPrev.png" alt="Description de l'image" style="margin-right: 15px; width: 30%">
+  <img src="assets/images/GLPI/GLPITrad.png" alt="Description de l'image" style="margin-right: 15px; width: 39%">
+  <p>
+    Ici, nous pouvons modifier tout ce qui est relatif à la <b style="color: rgb(255, 149, 0)">personnalisation du corps du mail</b> avec du language HTML. Cette petite interface va nous permettre de <b style="color: rgb(255, 149, 0)">mettre en forme le modèle</b> avec un éditeur intégré, avec lequel nous pouvons <b style="color: rgb(255, 149, 0)">insérer du texte</b>, des <b style="color: rgb(255, 149, 0)">tableaux</b>, <b style="color: rgb(255, 149, 0)">images</b>, <b style="color: rgb(255, 149, 0)">liens</b>, mais surtout <b style="color: rgb(255, 149, 0)">du code</b>. Personnellement je n'ai pas utilisé l'éditeur car celui-ci <b style="color: rgb(255, 149, 0)">n'est pas fidèle</b>, j'ai préféré tout faire en <b style="color: rgb(255, 149, 0)">code</b> et le tester directement sur <b style="color: rgb(255, 149, 0)">chrome</b>. Mais le tester sur chrome <b style="color: rgb(255, 149, 0)">limite seulement au visuel du mail</b>, et comme je vous l'ai dit, ce modèle va devoir <b style="color: rgb(255, 149, 0)">s'adapter à la situation</b> en changeant de visuel en fonction de l'état du ticket...
+  </p>
+</div><br>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/GLPI/GLPITickets.png" alt="Description de l'image" style="margin-right: 15px; width: 70%">
+  <div>
+    <p>
+      C'est grâce à cette <b style="color: rgb(255, 149, 0)">magnifique interface</b> et au menu <b style="color: rgb(255, 149, 0)">"+ Créer un ticket"</b> que nous allons pourvoir <b style="color: rgb(255, 149, 0)">créer</b>, <b style="color: rgb(255, 149, 0)">gérer</b> et <b style="color: rgb(255, 149, 0)">attribuer des états</b> à nos différents tickets.
+    </p>
+    <div class="info-zone">  
+      Sur un ticket, comme dit précédemment, nous avons plusieurs états : <b style="color: rgb(194, 194, 194)">Création</b>, <b style="color: rgb(194, 194, 194)">mise à jour</b>, <b style="color: rgb(194, 194, 194)">solution proposée</b>, <b style="color: rgb(194, 194, 194)">solution approuvée</b> et <b style="color: rgb(194, 194, 194)">clôture</b>.
+    </div>
+  </div>
+</div><br>
+<p><a name="FonctionnementGLPI" href=""></a></p>
+<h5 id="introduction-au-fonctionnement-des-modèles-glpi">Introduction au fonctionnement des Modèles GLPI </h5>
+<p>Les modèles GLPI peuvent être universels grâce aux différentes variables que peut fournir GLPI, nous pouvons les reconnaître car elles sont entourées de deux hashtag <strong>"##VARIABLE##"</strong>, par exemple il y a <strong>"##ticket.author##"</strong> qui sera par la suite <strong>remplacée par le nom de l'auteur du ticket</strong>. Il y a aussi des <strong>méthodes de conditions ou de boucle</strong> telles que <strong>"##IFticket.action=création du ticket##"</strong> qui permet d'<strong>exécuter le code suivant seulement si le ticket vient d'être créé</strong> ou encore <strong>"##FOREACHfollowups##"</strong> qui va nous permettre d'<strong>exécuter du code pour chaque suivi qui existe</strong>, comme par exemple les afficher.<br>
+<br></p>
+<p><a name="Modeles" href=""></a></p>
+<h5 id="modèles">Modèles </h5>
+<p>Comme dit précédemment, j'ai dû créer deux modèles, <a target="_blank" href="assets/files/tickets/Tickets [SYMEXO] clôture.html">un pour la clôture</a>, et <a target="_blank" href="assets/files/tickets/Tickets [SYMEXO].html">un pour le reste</a>. À la base, je ne voulais faire qu'un seul modèle pour des raisons de simplicité d'usage, mais seulement, la conditionnalité dans GLPI n'est pas au point, quand on met un <strong>"##ELSE...##"</strong> après un <strong>"##IF...##"</strong>, parfois ça ne marche pas et ça casse toutes les conditionnalités sous jacentes, pour cette raison, j'ai dû créer un modèle uniquement pour la clôture pour éviter une trop grande complexité de code dûe à la grande différence entre les deux.</p>
+<ul>
+<li><strong>Modèle Général</strong></li>
+</ul>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/Tickets/ModeleClassique.png" style="margin-right: 15px; width: 30%">
+  <div>
+    <p>
+      Dans ce <a target="_blank" href="assets/files/tickets/Tickets [SYMEXO].html">modèle classique</a>, nous avons toutes les actions à part la clôture qui y sont intégrés. Il y a 4 bulles principales, une contenant toutes les informations relatives au ticket, l'autre contenant le suivi, une la demande et enfin la dernière contient les informations de Symexo. Il ya plusieurs bulles de suivi car chacune correspond à une action en particulier.<br> Passons aux exemples :
+    </p>
+    <img align="left" src="assets/images/Tickets/CreationTicket.png" style="margin-right: 15px; width: 30%">
+    <p>
+      <a target="_blank" href="assets/files/tickets/1 - Ouverture du Ticket.html">Ici</a>, nous avons créé un ticket, nous avons 3 bulles, une avec les informations de celui-ci, un avec la demande de base et le dernier contenant les informations de Symexo.
+    </p>
+    <img align="left" src="assets/images/Tickets/SuiviTicket.png" style="margin-right: 15px; width: 30%">
+    <p>
+      Quand un ticket est <a target="_blank" href="assets/files/tickets/2 - Suivi Technicien 1.html">mis à jour</a>, il génère un suivi, le suivi a 4 bulles, dans celle qui se rajoute (Suivi), nous avons répertorié tous les suivis de ticket.
+    </p>
+  </div>
+</div><br>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/Tickets/SuiviTicket2.png" style="margin-right: 15px; width: 30%">
+  <div>
+    <p>
+      Quand il y a des messages de différentes personnes (<a target="_blank" href="assets/files/tickets/3 - Suivi Client 1.html">nouveau suivi</a>), ces messages sont différenciés par deux couleurs différentes, chacune attribuée à une personne. Nous pouvons aussi intégrer des images sans perte de qualité du suivi.
+    </p>
+    <img align="left" src="assets/images/Tickets/SolutionTicket.png" style="margin-right: 15px; width: 30%">
+    <p>
+      Quand une <a target="_blank" href="assets/files/tickets/7 - Solution Proposée.html">solution est proposée</a>, le texte dans la bulle "Support" change et la solution est dans une bulle bleue.
+    </p>
+  </div>
+</div><br>
+<ul>
+<li><strong>Modèle de Clôture</strong></li>
+</ul>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/Tickets/ClotureTicket.png" style="margin-right: 15px; width: 30%">
+  <p>
+    Quand un ticket est <a target="_blank" href="assets/files/tickets/8 - Clôture du Ticket.html">clôturé</a>, il change beaucoup : dans la bulle "Support", le texte change et une enquête de satisfaction est intégrée ; La bulle du dessous change de nom, maintenant c'est "Solution" et la solution approuvée est affichée dans une bulle verte.
+  </p>
+</div><br>
+<p><a name="GenerationDocuments" href=""></a></p>
+<h4 id="génération-et-valorisation-automatique-de-documents">Génération et valorisation automatique de Documents </h4>
+<table>
+<thead>
+<tr>
+<th>Langages/Outils Utilisés</th>
+<th>Utilité</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Visiativ Process</td>
+<td>Création de processus métier, remplissage de formulaire</td>
+</tr>
+<tr>
+<td>JAVA</td>
+<td>Récupération et manipulation des informations des formulaires pour générer des documents via Apache POI / Complétion automatique de champs de formulaires.</td>
+</tr>
+</tbody>
+</table>
+<p><a name="RefonteLogicielle" href=""></a><br>
+<br></p>
+<h3 id="refonte-de-lusine-logicielle">Refonte de l'usine logicielle </h3>
+<table>
+<thead>
+<tr>
+<th>Langages/Outils Utilisés</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="src/HTML/RefonteUsineLogicielle/Bash.html" target="_blank">Bash</a></td>
+<td>Langage de manipulation du système informatique</td>
+</tr>
+<tr>
+<td><a href="src/HTML/RefonteUsineLogicielle/Yaml.html" target="_blank">YAML</a></td>
+<td>Langage de configuration</td>
+</tr>
+<tr>
+<td><a href="src/HTML/RefonteUsineLogicielle/Docker.html" target="_blank">Docker</a></td>
+<td>Plateforme permettant de créer, déployer et gérer des conteneurs légers et isolés, qui regroupent une application et ses dépendances</td>
+</tr>
+<tr>
+<td><a href="src/HTML/RefonteUsineLogicielle/Portainer.html" target="_blank">Portainer</a></td>
+<td>Interface graphique de gestion d'environnements Docker complet (Images, Conteneurs, Stacks, Volumes, Network)</td>
+</tr>
+<tr>
+<td><a href="src/HTML/RefonteUsineLogicielle/Gitea.html" target="_blank">Gitea</a></td>
+<td>Plateforme de gestion de code source légère et auto-hébergée</td>
+</tr>
+<tr>
+<td><a href="src/HTML/RefonteUsineLogicielle/GiteaActions.html" target="_blank">Gitea Actions</a></td>
+<td>Fonctionnalité de Gitea permettant l'automatisation de <a href="src/HTML/RefonteUsineLogicielle/Workflow.html" target="_blank">workflows</a> de développement directement au sein de la plateforme</td>
+</tr>
+<tr>
+<td><a href="src/HTML/RefonteUsineLogicielle/NginxProxyManager.html" target="_blank">Nginx Proxy Manager</a></td>
+<td>Interface graphique permettant de gérer des serveurs proxy basés sur Nginx</td>
+</tr>
+<tr>
+<td><a href="src/HTML/RefonteUsineLogicielle/SonarQube.html" target="_blank">SonarQube</a></td>
+<td>Plateforme d'analyse de code qui permet de mesurer la qualité du code source et de détecter des problèmes tels que des bugs, des vulnérabilités et des mauvaises pratiques de programmation</td>
+</tr>
+<tr>
+<td><a href="src/HTML/RefonteUsineLogicielle/SonatypeNexusRepositoryManager.html" target="_blank">Sonatype Nexus Repository Manager</a></td>
+<td>Outil de gestion de dépôts de composants logiciels. Il permet de stocker, gérer et distribuer des artefacts logiciels comme des bibliothèques, des dépendances, et des images de conteneurs</td>
+</tr>
+</tbody>
+</table>
+<p>Dans le <strong>service de transformation numérique</strong>, pour développer des applications ou autre, nous avons une usine logicielle, un regroupement de logiciels qui fonctionnent ensemble pour nous simplifier la vie (comme un <strong>écosystème</strong>)... C'est à dire, quand nous envoyons notre code sur <strong>Gitea</strong>, celui-ci est envoyé sur <strong>Jenkins</strong> qui est un logiciel qui permet de le <strong>déploiement du code sur Sonarqube et Archiva</strong> (similaire à Nexus Repository Manager). Donc dans l'ancienne usine logicielle nous utilisions les logiciels suivants : Gitea, Jenkins, Sonarqube, Archiva.</p>
+<p>Aujourd'hui, nous avons choisi <strong>d'abandonner certains logiciels pour d'autre</strong>, nous utilisons maintenant : Gitea, Gitea actions (fonctionnalité de Gitea), Sonarqube et Sonatype Nexus Repository Manager. Nous avons donc abandonné <strong>Jenkins</strong> pour les <strong>Gitea action</strong> et <strong>Archiva</strong> pour <strong>Nexus Repository</strong>.</p>
+<p>Pour faire en sorte que l'écosystème prenne moins de performances et qu'il soit plus facile à gérer, nous avons tout dockerisé, chaque application est contenue dans un conteneur docker, certains peuvent communiquer entre eux comme par exemple celui des Gitea Actions et de SonarQube.</p>
+<h5 id="pourquoi-abandonner-ces-logiciels-">Pourquoi abandonner ces logiciels ? </h5>
+<h6 id="jenkins">Jenkins </h6>
+<p>Nous avons remplacé Jenkins par les Gitea actions car tout ce que nous avons besoin de faire sur Jenkins (vérifier la compilation et envoyer le code sur Sonarqube et Nexus Repository), nous pouvons le faire avec les Gitea action, pour retirer de la complexité à l'écosystème et économiser en performances ; nous avons choisi de l'abandonner.</p>
+<img src="assets/images/UsineLogicielle/Jenkins.png" style="margin-right: 15px; width: 40%">
+<h6 id="archiva">Archiva </h6>
+<p>Archiva n'était tout simplement pas un logiciel que nous pouvions dockeriser, de plus, il est compliqué à mettre à jour et pas très intuitif ni esthétique. Sonatype Nexus, lui, est dockerisable, ce qui fait qu'il est beaucoup plus facile à gérer, de plus il est très intuitif et plutôt joli.</p>
+<img src="assets/images/UsineLogicielle/Archiva.png" style="margin-right: 15px; width: 35%">
+<h5 id="pourquoi-tout-dockeriser-">Pourquoi tout dockeriser ? </h5>
+<p>Dockeriser l'usine logicielle nous a permis de gagner en portabilité, en facilité de gestion, en sécurité et en performance. Vu que les applications sont portées dans des conteneurs, nous pouvons à tout moment les arrêter et les changer de place grâce à la stack qui le précède. Le logiciel Diun va pouvoir nous prévenir dès qu'une mise à jour est disponible sur une application, ce qui fait gagner beaucoup de temps car quand nous voulons mettre à jour une application, nous n'avons qu'à redémarrer son conteneur ! De plus, toutes les données sont stockées dans des volumes inaccessibles par les applications non autorisées ou non liées, ce qui garantit la sécurité des données de l'application. Enfin, vu que chaque application est exécutée dans un conteneur sans OS, cela est beaucoup moins énergivore ; chaque conteneur contient seulement ce dont l'application a besoin pour fonctionner, économisant ainsi beaucoup de performances !</p>
+<p><a name="LogicielsPrealables" href=""></a></p>
+<h4 id="logiciels-préalables">Logiciels préalables </h4>
+<p>Pour faire fonctionner tout cet écosystème correctement et rendre une bonne expérience utilisateur, nous devons faire en sorte de simplifier l'accès aux outils, de les sécuriser et de les optimiser ; Pour cela, nous avons utilisé Docker, Portainer et Nginx Proxy Manager.</p>
+<h5 id="a-hrefsrchtmlrefonteusinelogicielledockerhtml-target_blankdockera"><a href="src/HTML/RefonteUsineLogicielle/Docker.html" target="_blank">Docker</a> </h5>
+<p><a href="src/HTML/RefonteUsineLogicielle/Docker.html" target="_blank">Docker</a>, comme vu précédemment, est un outil de conteneurisation de logiciel, il permet d'exécuter chaque logiciels indépendamment avec d'installé seulement ce que le logiciel à besoin, ce qui optimise la consommation de ressource par logiciels. De plus, il sécurise chaque applications car, sauf si elles y sont autorisées, elles ne peuvent pas communiquer ensemble ; Aussi, chaque applications ont leurs volumes personnels dans lesquels elles vont pouvoir stocker toutes leur données, ce qui simplifie la gestions de celles-ci.</p>
+<img src="assets/images/UsineLogicielle/Docker.png" style="margin-right: 15px; width: 20%">
+<h5 id="a-hrefsrchtmlrefonteusinelogicielleportainerhtml-target_blankportainera"><a href="src/HTML/RefonteUsineLogicielle/Portainer.html" target="_blank">Portainer</a> </h5>
+<p><a href="src/HTML/RefonteUsineLogicielle/Portainer.html" target="_blank">Portainer</a> est un outil permettant de centraliser et de gérer tout un environnement docker (stacks (compose), images, conteneurs, volumes, networks) dans une application Web graphique et intuitive. C'est le deuxième logiciel de base à installer après docker pour que notre usine logicielle fonctionne correctement. D'ailleurs, ce logiciel tourne aussi dans un conteneur !</p>
+<img src="assets/images/UsineLogicielle/Portainer.png" style="margin-right: 15px; width: 30%">
+<h5 id="a-hrefsrchtmlrefonteusinelogiciellenginxproxymanagerhtml-target_blanknginx-proxy-managera"><a href="src/HTML/RefonteUsineLogicielle/NginxProxyManager.html" target="_blank">Nginx Proxy Manager</a> </h5>
+<p><a href="src/HTML/RefonteUsineLogicielle/NginxProxyManager.html" target="_blank">Nginx Proxy Manager</a> nous a permis de rendre l’expérience utilisateur plus agréable, mais surtout plus sécurisée. Grâce à ce logiciel, à un DNS configuré  précédemment et un certificat SSL valide, nous avons pu donner à notre application web à laquelle nous pouvions de base accéder via son ip, un nom de domaine ! Par exemple, pour accéder à Gitea, au lieu d'aller sur <a href="http://10.2.1.70:3000">http://10.2.1.70:3000</a> <em>(adresse IP factice)</em> nous pouvions aller sur <a href="https://code-repo.symexo.com">https://code-repo.symexo.com</a>, de même pour SonarQube : <a href="https://code-quality.symexo.com">https://code-quality.symexo.com</a> et enfin pour Nexus Repository : <a href="https://code-artifacts.symexo.com">https://code-artifacts.symexo.com</a>. Aussi, grâce au proxy, les applications seront protégées des attaques directes, celui-ci jouera le role du garde de la porte vers chaque applications, personne ne pourra directement accéder à celles-ci. Ce logiciel est à configurer en suivant de l'installation de Gitea, SonarQube et Nexus Repository.</p>
+<img src="assets/images/UsineLogicielle/NginxProxyManager.png" style="margin-right: 15px; width: 30%">
+<p><a name="LogicielsPrincipaux" href=""></a></p>
+<h4 id="logiciels-principaux">Logiciels principaux </h4>
+<h5 id="a-hrefsrchtmlrefonteusinelogiciellegiteahtml-target_blankgiteaa"><a href="src/HTML/RefonteUsineLogicielle/Gitea.html" target="_blank">Gitea</a> </h5>
+<p><a href="src/HTML/RefonteUsineLogicielle/Gitea.html" target="_blank">Gitea</a> est un instance de Git parmi tant d'autres, nous pouvons par exemple la comparer à GitHub ou à GitLab ou même à BitBucket. La raison pour laquelle nous l'avons choisi est que ce logiciel est open source et que nous pouvons l'héberger en local, ce qui garanti une sécurité de nos données et de celles nos clients ; Aussi, nous ne dépendons pas d'internet, tout ce que nous avons besoin pour travailler est un réseau local fonctionnel.</p>
+<img src="assets/images/UsineLogicielle/Gitea.png" style="margin-right: 15px; width: 30%">
+<h5 id="a-hrefsrchtmlrefonteusinelogiciellesonarqubehtml-target_blanksonarqubea"><a href="src/HTML/RefonteUsineLogicielle/SonarQube.html" target="_blank">SonarQube</a> </h5>
+<p><a href="src/HTML/RefonteUsineLogicielle/SonarQube.html" target="_blank">SonarQube</a> est un outil de vérification de qualité de code, via des algorithmes propres à chaque langage, il va déterminer la qualité (soit la complexité, les mauvaises pratique, la duplication de code et les bugs/vulnérabilités potentiels) de celui-ci. Une fois les vérifications faites, grâce à l’extension "SonarLint" disponible sur VsCode, il va nous avertir des différents problèmes que nous pourrions résoudre dans notre code. C'est vraiment un très bon outil pour continuer à fournir un code de qualité à nos clients !</p>
+<img src="assets/images/UsineLogicielle/SonarQube.png" style="margin-right: 15px; width: 30%">
+<h5 id="a-hrefsrchtmlrefonteusinelogiciellesonatypenexusrepositorymanagerhtml-target_blanksonatype-nexus-repository-managera"><a href="src/HTML/RefonteUsineLogicielle/SonatypeNexusRepositoryManager.html" target="_blank">Sonatype Nexus Repository Manager</a> </h5>
+<p><a href="src/HTML/RefonteUsineLogicielle/SonatypeNexusRepositoryManager.html" target="_blank">Sonatype Nexus Repository Manager</a> est un espace de stockage des artefacts que va produire votre code, que ce soit les librairies (.jar/.a) ou les fichiers de configuration (xml/.h). Nous avons créer sur ce logiciel un groupe symexo contenant un dépôt "Proxy" qui va nous permettre d'aller chercher les dépendances sur un dépôt en ligne définit si celles-ci ne sont pas disponible dans les autres dépôts du groupe. En ce qui concerne les dépôts locals, nous en avons configurer deux, un pour les releases et un pour les snapshots.</p>
+<img src="assets/images/UsineLogicielle/Nexus.png" style="margin-right: 15px">
+<p><a name="DeroulementInstallation" href=""></a></p>
+<h4 id="déroulement-de-linstallation">Déroulement de l'installation </h4>
+<p><a name="VM" href=""></a></p>
+<h5 id="machine-virtuelle">Machine virtuelle </h5>
+<p>Avant toute chose, toute installation de logiciels, mon collègue à dû configurer une machine virtuelle sur VMware pour héberger toutes les applications. Celle-ci tourne sous Debian 12 sans interface graphique et nous lui avions de base allouer 4vCPU et 8Go de RAM, cependant, durant les tests des différents logiciel nous avons dû la faire évoluer...</p>
+<p><a name="Docker" href=""></a></p>
+<h5 id="docker">Docker </h5>
+<p>Nous avons ensuite installer Docker, celui-ci est absolument nécessaire au bon fonctionnement de notre usine, sans lui il n'y a rien.<br>
+Pour l'installer nous avons suivis les étapes suivantes :</p>
+<ul>
+<li>installer le <strong>dépôt apt Docker</strong>, celui-ci va nous permettre d'exécuter toutes les commandes docker disponible</li>
+<li>Installation de la dernière version des paquets Docker</li>
+<li>Vérification d'installation en exécutant l'image <strong>hello-world</strong><br>
+Cette commande nous a installer une image de test et l'a exécuté dans un conteneur. Quand celui-ci s'est exécuté, il nous a affiché un message de confirmation et s'est arrêté.</li>
+</ul>
+<p class="info-note">Les détails de code sont disponible dans la documentations associée <a href="src/HTML/RefonteUsineLogicielle/Docker.html" target="_blank">ici</a></p>
+<p><a name="Portainer" href=""></a></p>
+<h5 id="portainer">Portainer </h5>
+<p>Une fois que docker à été installé, nous avons pu installer Portainer pour installer, configurer et gérer tous nos futur conteneurs depuis une interface graphique.<br>
+Pour l'installer nous avons tout simplement eu à entrer une commande docker :</p>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code><span class="token function">docker</span> run <span class="token parameter variable">-d</span> <span class="token parameter variable">-p</span> <span class="token number">9000</span>:9000 <span class="token parameter variable">--name</span> portainer <span class="token punctuation">\</span>
+    <span class="token parameter variable">--restart</span><span class="token operator">=</span>always <span class="token punctuation">\</span>
+    <span class="token parameter variable">-v</span> /var/run/docker.sock:/var/run/docker.sock <span class="token punctuation">\</span>
+    <span class="token parameter variable">-v</span> portainer_data:/data <span class="token punctuation">\</span>
+    portainer/portainer-ce:latest
+</code></pre><p class="info-zone">Cette commande va lancer un conteneur se nommant "portainer" exposant le port 9000 en se basant sur l'image "portainer/portainer-ce:latest" et stoquant ses informations dans le volume "/data" du conteneur et "/portainer_data" sur votre machine !</p>
+<p class="info-note">Pour de plus précises informations vous pouvez aller voir la <a href="src/HTML/RefonteUsineLogicielle/Portainer.html" target="_blank">documentation associée</a></p>
+<p>L'interface graphique ce présente sous cette forme :</p>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/UsineLogicielle/Portainer/Dashboard.png" style="margin-right: 15px; width: 70%">
+  <p>Avec cette interface nous pouvons accéder simplement à tous les composants de notre environnement docker, les éditer, les déployer, les stopper, les supprimer et encore bien d'autres actions...</p>
+</div>
+<p><a name="Gitea" href=""></a></p>
+<h5 id="gitea">Gitea </h5>
+<ul>
+<li>Maintenant que Portainer à été installé, nous avons pu installer Gitea directement avec un interface graphique simple. Nous n'avons qu'à créer une stack et à la remplir avec le code ci-dessous et à compléter toutes les variables, ensuite nous la déployons et voilà, il est installé !</li>
+</ul>
+<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>version: <span class="token string">"3"</span>
+
+networks:
+  gitea:
+    external: <span class="token boolean">false</span>
+
+services:
+  server:
+    image: gitea/gitea:latest
+    container_name: gitea
+    environment:
+      - <span class="token assign-left variable">USER_UID</span><span class="token operator">=</span><span class="token number">1000</span>
+      - <span class="token assign-left variable">USER_GID</span><span class="token operator">=</span><span class="token number">1000</span>
+      - <span class="token assign-left variable">GITEA__database__DB_TYPE</span><span class="token operator">=</span>mysql
+      <span class="token punctuation">..</span>.
+      - <span class="token assign-left variable">GITEA__log__LEVEL</span><span class="token operator">=</span>Error
+      - <span class="token assign-left variable">GITEA__indexer_REPO_INDEXER_ENABLED</span><span class="token operator">=</span>true
+    restart: always
+    networks:
+      - gitea
+    volumes:
+      - ./gitea:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - <span class="token string">"3000:3000"</span>
+      - <span class="token string">"8443:443"</span>
+      - <span class="token string">"222:22"</span>
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8
+    restart: always
+    environment:
+      - <span class="token assign-left variable">MYSQL_ROOT_PASSWORD</span><span class="token operator">=</span>gitea
+      - <span class="token assign-left variable">MYSQL_USER</span><span class="token operator">=</span>gitea
+      - <span class="token assign-left variable">MYSQL_PASSWORD</span><span class="token operator">=</span>gitea
+      - <span class="token assign-left variable">MYSQL_DATABASE</span><span class="token operator">=</span>gitea
+    networks:
+      - gitea
+    volumes:
+      - ./mysql:/var/lib/mysql
+</code></pre><p class="info-zone">Dans ce compose, nous instancions une image et un conteneur Gitea et un sql8 pour stocker les configuration, les dépôts et les utilisateur que nous créerons plus tard dans Gitea. Toutes les variables sont optionnelles, nous les avons mise car notre configuration les demande.</p>
+<p class="info-note">Des précisions supplémentaires sont disponibles dans la documentation associée, vous pouvez y accéder en cliquant <a href="src/HTML/RefonteUsineLogicielle/Gitea.html" target="_blank">ici</a> !</p>
+<ul>
+<li>Ensuite, j'ai du finir la configuration : au premier accès sur l'application, il y a une page de vérification de la configuration, une fois cette configuration validée, je me suis créer un compte qui a directement eu les droits d'administrateur.</li>
+<li>Après avoir fini de configurer Gitea, j'ai dû enregistrer ma clé SSH pour pouvoir envoyer du code dessus.</li>
+</ul>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/UsineLogicielle/Gitea/SSH.png" style="margin-right: 15px; width: 70%">
+  <div>
+    <p>C'est dans ce menu que j'ai pu configurer ma clé SSH</p>
+    <p class="info-zone">Pour plus d'informations, vous pouvez vous rendre sur la <a href="src/HTML/RefonteUsineLogicielle/Gitea.html">documentation associée</a></p>
+  </div>
+</div>
+<p><a name="GiteaActions" href=""></a></p>
+<h5 id="gitea-actions">Gitea Actions </h5>
+<p>Les Gitea actions sont une fonctionnalité de Gitea permettant de faire du "CI/CD" (intégration continue/livraison ou déploiement continu), en bref ça va nous permettre de faire un peu ce qu'on veut avec notre code une fois qu'il est envoyé sur Gitea, que ce soit test de compilation, test classique ou encore envoi sur différentes plateformes, beaucoup de choses sont possible.</p>
+<p class="info-zone">Pour plus de précisions vous pouvez aller regarder la documentation associée en cliquant <a href="src/HTML/RefonteUsineLogicielle/GiteaActions.html">ici</a> !</p>
+<p>Pour faire l'installation, j'ai dû suivre les étapes suivantes :</p>
+<ul>
+<li>J'ai choisi de créer un conteneur à part pour le runner des Gitea Actions car si celui-ci est saturé au niveau des performances, je pourrai continuer à me servir de Gitea. Pour la création j'ai mis le compose suivant :</li>
+</ul>
+<pre data-role="codeBlock" data-info="yaml" class="language-yaml yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">"3.8"</span>
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">runner</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> gitea/act_runner<span class="token punctuation">:</span>latest
+    <span class="token key atrule">deploy</span><span class="token punctuation">:</span>
+      <span class="token key atrule">resources</span><span class="token punctuation">:</span>
+        <span class="token key atrule">limits</span><span class="token punctuation">:</span>
+          <span class="token key atrule">cpus</span><span class="token punctuation">:</span> <span class="token string">"16"</span>
+          <span class="token key atrule">memory</span><span class="token punctuation">:</span> <span class="token string">"32g"</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">CONFIG_FILE</span><span class="token punctuation">:</span> /config.yaml
+      <span class="token key atrule">GITEA_INSTANCE_URL</span><span class="token punctuation">:</span> <span class="token string">"http://10.2.1.70:3000"</span>
+      <span class="token key atrule">GITEA_RUNNER_REGISTRATION_TOKEN</span><span class="token punctuation">:</span> <span class="token string">"${TOKEN}"</span>
+      <span class="token key atrule">GITEA_RUNNER_NAME</span><span class="token punctuation">:</span> <span class="token string">"PortainerRunner"</span>
+      <span class="token key atrule">GITEA_RUNNER_TYPE</span><span class="token punctuation">:</span> <span class="token string">"instance"</span>
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> ./config.yaml<span class="token punctuation">:</span>/config.yaml
+      <span class="token punctuation">-</span> ./data<span class="token punctuation">:</span>/data
+      <span class="token punctuation">-</span> /var/run/docker.sock<span class="token punctuation">:</span>/var/run/docker.sock
+      <span class="token punctuation">-</span> /var/lib/docker/volumes/m2Directory<span class="token punctuation">:</span>/mnt
+</code></pre><p class="info-zone">Ici, j'ai limité l'utilisation CPU et RAM à 16cpus et 32Go pour ne pas saturer le reste du système en cas de trop grosse consommation de performances.</p>
+<br>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/UsineLogicielle/Gitea/RunnerToken.png" style="margin-right: 15px; width: 70%">
+  <p class="info-zone"> Pour récupérer le token j'ai dû me rendre dans le menu des exécuteurs sur Gitea et le récupérer en cliquant sur "Créer un nouvel exécuteur". Tout est détaillé sur la <a href="src/HTML/RefonteUsineLogicielle/Gitea.html">documentation</a> tout en bas.</p>
+</div>
+<br>
+<ul>
+<li>Ensuite je suis rentré dans le conteneur et j'ai configurer tout le nécessaire pour que le workflow fonctionne correctement puis j'en suis sorti.</li>
+</ul>
+<p class="info-note">Pour plus de détails sur comment je m'y suis pris, vous pouvez aller vous la <a href="src/HTML/RefonteUsineLogicielle/Gitea.html">documentation associée</a>, la partie consacrée à la configuration des Gitea Action se trouve tout en bas.</p>
+<p>Malheureusement j'ai eu un petit problème...<br>
+Le Runner, à son premier lancement, regarde s'il n'y a pas un fichier de configuration à sa racine, sinon il en crée un ; Mais quand il le crée, souvent il crée un répertoire au lieu d'un fichier, ce qui fait que quand il essaie de l'ouvrir en tant que fichier, il n'y arriver pas. J'ai donc dû arrêter le conteneur, remplacer ce dossier par un fichier du même nom et relancer le conteneur.</p>
+<ul>
+<li>Une fois le runner correctement configuré, je me suis rendu dans mon dépôt et je suis allé dans les paramètres de celui-ci pour autoriser les Action sur celui-ci, une fois cela fait, j'ai pu créer mon premier workflow, le commit et laisser la magie opérer !</li>
+</ul>
+<p><a name="SonarQube" href=""></a></p>
+<h5 id="sonarqube">SonarQube </h5>
+<p>Après Gitea j'ai directement pu installer SonarQube, c'est à peu près le même principe que Gitea sauf que c'est plus simple, il n'y a eu à faire quasiment aucune configuration, j'ai juste dû créer la stack avec le compose ci-dessous, la déployer puis aller chercher le token SonarQube.</p>
+<pre data-role="codeBlock" data-info="yaml" class="language-yaml yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">"3"</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">sonarqube</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> sonarqube<span class="token punctuation">:</span>community
+    <span class="token key atrule">depends_on</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> db
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">SONAR_JDBC_URL</span><span class="token punctuation">:</span> jdbc<span class="token punctuation">:</span>postgresql<span class="token punctuation">:</span>//db<span class="token punctuation">:</span>5432/sonar
+      <span class="token key atrule">SONAR_JDBC_USERNAME</span><span class="token punctuation">:</span> sonar
+      <span class="token key atrule">SONAR_JDBC_PASSWORD</span><span class="token punctuation">:</span> sonar
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> sonarqube_data<span class="token punctuation">:</span>/opt/sonarqube/data
+      <span class="token punctuation">-</span> sonarqube_extensions<span class="token punctuation">:</span>/opt/sonarqube/extensions
+      <span class="token punctuation">-</span> sonarqube_logs<span class="token punctuation">:</span>/opt/sonarqube/logs
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">"5000:9000"</span>
+  <span class="token key atrule">db</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> postgres<span class="token punctuation">:</span><span class="token number">12</span>
+    <span class="token key atrule">environment</span><span class="token punctuation">:</span>
+      <span class="token key atrule">POSTGRES_USER</span><span class="token punctuation">:</span> sonar
+      <span class="token key atrule">POSTGRES_PASSWORD</span><span class="token punctuation">:</span> sonar
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> postgresql<span class="token punctuation">:</span>/var/lib/postgresql
+      <span class="token punctuation">-</span> postgresql_data<span class="token punctuation">:</span>/var/lib/postgresql/data
+
+<span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+  <span class="token key atrule">sonarqube_data</span><span class="token punctuation">:</span>
+  <span class="token key atrule">sonarqube_extensions</span><span class="token punctuation">:</span>
+  <span class="token key atrule">sonarqube_logs</span><span class="token punctuation">:</span>
+  <span class="token key atrule">postgresql</span><span class="token punctuation">:</span>
+  <span class="token key atrule">postgresql_data</span><span class="token punctuation">:</span>
+</code></pre><p class="info-zone">Dans ce compose, j'ai instancier une image et un conteneur SonarQube et un Postgres12 pour stocker les utilisateur et le code envoyé.</p>
+<ul>
+<li>Après avoir déployer le logiciel, j'ai dû aller chercher le token d'enregistrement dans SonarQube dans cette petite fenêtre :</li>
+</ul>
+<br>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/UsineLogicielle/SonarQube/Token.png" style="margin-right: 15px; width: 70%">
+  <p class="info-zone">Dans cette fenêtre, j'ai pu créer mon token en renseignant le nom, le type et le temps d'expiration de celui-ci</p>
+</div>
+<br>
+<ul>
+<li>Au final j'ai pu envoyer mon code sur SonarQube et voir les différents comptes rendus !</li>
+</ul>
+<br>
+<div style="display: flex; align-items: flex-start;">
+  <img src="assets/images/UsineLogicielle/SonarQube/Projects.png" style="margin-right: 15px; width: 34.5%">
+  <img src="assets/images/UsineLogicielle/SonarQube/Projects.png" style="margin-right: 15px; width: 34.5%">
+  Et comme mon code est parfait, il n'y a aucun problème :) (Si seulement c'était le miens...)
+</div>
+<br>
+<p class="info-note">Si vous souhaitez avoir plus de détails, la documentation associée est <a href="src/HTML/RefonteUsineLogicielle/SonarQube.html">ici</a> !</p>
+<p><a name="Nexus" href=""></a></p>
+<h5 id="sonatype-nexus-repository">Sonatype Nexus Repository </h5>
+<p>Pour Nexus Repository, c'est tout pareil sauf que quand on se connecte pour la première fois, il faut aller chercher le mot de passe à un endroit spécifique sur le système...</p>
+<ul>
+<li>Premièrement j'ai installé SonarQube avec le compose ci-dessous, pour une fois il est très simple !</li>
+</ul>
+<pre data-role="codeBlock" data-info="yaml" class="language-yaml yaml"><code><span class="token key atrule">version</span><span class="token punctuation">:</span> <span class="token string">"3"</span>
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">nexus</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> sonatype/nexus3
+    <span class="token key atrule">restart</span><span class="token punctuation">:</span> always
+    <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">"nexus-data:/sonatype-work"</span>
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> <span class="token string">"8081:8081"</span>
+      <span class="token punctuation">-</span> <span class="token string">"8085:8085"</span>
+<span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+  <span class="token key atrule">nexus-data</span><span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+</code></pre><p class="info-zone">Dans ce compose, j'ai instancier une image et un conteneur Sonatype Nexus 3 pour stocker les utilisateurs et les artefacts que j'y envoie.</p>
+<ul>
+<li>Une fois le logiciel lancé, il faut se connecter, et quand on se connecte pour la première fois il faut aller chercher le mot de passe  un endroit spécifique sur le système (conteneur). Pour cela j'ai dû entrer dans le conteneur et aller chercher le mot de passe au bon emplacement.</li>
+</ul>
+<img src="assets/images/UsineLogicielle/Sonatype/Home.png" style="margin-right: 15px; width: 70%">
+<ul>
+<li>Quand je me suis connecté, je suis allé créer plusieurs choses :
+<ul>
+<li>Un dépôt "releases" qui va me permettre de stocker seulement les versions finies.</li>
+<li>Un dépôt "snapshots" qui va me permettre de stocker toutes les versions de test.</li>
+<li>Un dépôt "Proxy", celui-ci va se charger d'aller chercher les dépendances sur un dépôt en ligne si celle que je demande ne sont pas dans le dépôts du groupe</li>
+<li>Un groupe dans lequel j'ai mis les 3 dépôts précédents.</li>
+</ul>
+</li>
+</ul>
+<img src="assets/images/UsineLogicielle/Sonatype/Repos.png" style="margin-right: 15px; width: 70%">
+<br>
+<br>
+<p class="info-note">Si vous souhaitez avoir plus d'informations, vous pouvez aller voir la <a href="src/HTML/RefonteUsineLogicielle/SonatypeNexusRepositoryManager.html">documentation liée</a>.</p>
+<p><a name="ApresInstallation" href=""></a></p>
+<h4 id="après-installation">Après installation </h4>
+<p>Une fois toute l'installation terminée et tous les logiciels fonctionnels, j'ai pu commencer à tester tout l'écosystème, pour cela j'ai créer un Workflow Gitea qui va faire tout un tat de choses avec le code push sur Gitea.</p>
+<p><a name="Workflow" href=""></a></p>
+<h5 id="workflow-gitea">Workflow Gitea </h5>
+<p>Le Workflow va permettre d'exécuter différents test, de stocker et d'analyser le code :</p>
+<ul>
+<li>À la réception du code, il va exécuter des tests de compilation et d'autres test s'ils sont paramétrés</li>
+<li>Une fois les tests effectués, si ceux-ci ont réussis, les artefacts seront envoyés sur Nexus Repository.</li>
+<li>Ensuite, encore une fois si les test ont réussis, tout le code sera envoyé sur SonarQube pour une analyse de la qualité de celui-ci.</li>
+</ul>
+<br>
+<p class="info-note">Pour avoir plus d'informations sur le Workflow que j'ai écris, vous pouvez vous rendre sur sa <a href="src/HTML/RefonteUsineLogicielle/WorkflowGitea.html">documentation associée</a>.</p>
+<br>
+<p><a name="FonctionnementEcosysteme" href=""></a></p>
+<h5 id="fonctionnement-de-lécosystème">Fonctionnement de l'écosystème </h5>
+<br>
+<img src="assets/images/UsineLogicielle/Ecosysteme/Fonctionnement.png" style="margin-right: 15px; width: 70%">
+<br>
+<ol>
+<li>Le code est <strong>Push sur Gitea</strong></li>
+<li>Celui-ci passe par les <strong>Gitea Actions</strong>, un Workflow s'exécute et :
+<ul>
+<li>Vérifie la <strong>compilation du Code</strong></li>
+<li><strong>Exécute les test</strong> si ceux-cis sont paramétrés</li>
+</ul>
+</li>
+<li>Si le build et les tests sont passés, le Workflow passe à l'étape suivante et :
+<ul>
+<li><strong>Envoie les artefacts sur Sonatype Nexus Repository Manager</strong></li>
+<li><strong>Envoie le code sur SonarQube</strong> pour une analyse de qualité de code</li>
+</ul>
+</li>
+</ol>
+<p><a name="ProblemesUsineV2" href=""></a></p>
+<h5 id="problèmes-rencontrés">Problèmes rencontrés </h5>
+<p>Pour cette mission je n'ai pas rencontré beaucoup de problèmes, le seul que j'ai rencontré est au niveau de la configuration des Gitea Action:<br>
+Quand le conteneur de l'action runner se lance, il va chercher un fichier <strong>"config.yaml"</strong>, s'il ne le trouve pas, il va le créer, sauf que souvent il va créer un dossier au lieu d'un fichier, donc j'ai du arrêter le conteneur, remplacer le dossier par un fichier du même nom et le redémarrer.</p>
+<p><a name="ConclusionUsineV2" href=""></a></p>
+<h4 id="conclusion">Conclusion </h4>
+<p>Cette mission n'était pas extrêmement difficile mais m'a beaucoup plu. J'ai pu développer des compétences plutôt solides en Dev-Ops, surtout sur docker et les Gitea actions, et tout ça en utilisant le langage <strong>YAML</strong> pour installer et configurer beaucoup de logiciels d'analyse, de stockage, de test et d'autres. Nous avons maintenant une Usine Logicielle plus performante et à jour !</p>
+<p><a name="AutresMissions" href=""></a></p>
+<h3 id="autres-missions">Autres missions </h3>
+</center></center>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
