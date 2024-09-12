@@ -5,7 +5,6 @@ Repport de Stage Epitech Tek1 fait en MarkDown.
 
 --------------------------------------------------------
 
-
 Jules de Rus
 Tek 2
 

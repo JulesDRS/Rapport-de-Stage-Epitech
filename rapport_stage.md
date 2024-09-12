@@ -127,22 +127,22 @@ Pour cela, j'ai utilisé le logiciel **GLPI** *(Gestionnaire Libre de Parcs Info
 ##### Interface GLPI
 
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/GLPI/GLPI.png" alt="Description de l'image" style="margin-right: 15px; width: 70%">
+  <img src="assets/images/RefonteEspaceClient/GLPI/GLPI.png" alt="Description de l'image" style="margin-right: 15px; width: 70%">
   <p>
     Voici l'interface qui va nous permettre de <b style="color: rgb(255, 149, 0)">modifier le modèle de notification sélectionné</b>, nous avons plusieurs options dans chaque menu ; ici nous pouvons lui donner un <b style="color: rgb(255, 149, 0)">nom</b>, le <b style="color: rgb(255, 149, 0)"> classer dans un type</b>, <b style="color: rgb(255, 149, 0)">insérer des commentaires</b> mais surtout du <b style="color: rgb(255, 149, 0)">CSS</b>, le langage qui va permettre de <b style="color: rgb(255, 149, 0)">donner un style à notre mail</b>. Aussi, nous avons un menu "Traduction de modèle" auquel nous allons nous intéresser ci-après.
   </p>
 </div><br>
 
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/GLPI/GLPIPrev.png" alt="Description de l'image" style="margin-right: 15px; width: 30%">
-  <img src="assets/images/GLPI/GLPITrad.png" alt="Description de l'image" style="margin-right: 15px; width: 39%">
+  <img src="assets/images/RefonteEspaceClient/GLPI/GLPIPrev.png" alt="Description de l'image" style="margin-right: 15px; width: 30%">
+  <img src="assets/images/RefonteEspaceClient/GLPI/GLPITrad.png" alt="Description de l'image" style="margin-right: 15px; width: 39%">
   <p>
     Ici, nous pouvons modifier tout ce qui est relatif à la <b style="color: rgb(255, 149, 0)">personnalisation du corps du mail</b> avec du language HTML. Cette petite interface va nous permettre de <b style="color: rgb(255, 149, 0)">mettre en forme le modèle</b> avec un éditeur intégré, avec lequel nous pouvons <b style="color: rgb(255, 149, 0)">insérer du texte</b>, des <b style="color: rgb(255, 149, 0)">tableaux</b>, <b style="color: rgb(255, 149, 0)">images</b>, <b style="color: rgb(255, 149, 0)">liens</b>, mais surtout <b style="color: rgb(255, 149, 0)">du code</b>. Personnellement je n'ai pas utilisé l'éditeur car celui-ci <b style="color: rgb(255, 149, 0)">n'est pas fidèle</b>, j'ai préféré tout faire en <b style="color: rgb(255, 149, 0)">code</b> et le tester directement sur <b style="color: rgb(255, 149, 0)">chrome</b>. Mais le tester sur chrome <b style="color: rgb(255, 149, 0)">limite seulement au visuel du mail</b>, et comme je vous l'ai dit, ce modèle va devoir <b style="color: rgb(255, 149, 0)">s'adapter à la situation</b> en changeant de visuel en fonction de l'état du ticket...
   </p>
 </div><br>
 
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/GLPI/GLPITickets.png" alt="Description de l'image" style="margin-right: 15px; width: 70%">
+  <img src="assets/images/RefonteEspaceClient/GLPI/GLPITickets.png" alt="Description de l'image" style="margin-right: 15px; width: 70%">
   <div>
     <p>
       C'est grâce à cette <b style="color: rgb(255, 149, 0)">magnifique interface</b> et au menu <b style="color: rgb(255, 149, 0)">"+ Créer un ticket"</b> que nous allons pourvoir <b style="color: rgb(255, 149, 0)">créer</b>, <b style="color: rgb(255, 149, 0)">gérer</b> et <b style="color: rgb(255, 149, 0)">attribuer des états</b> à nos différents tickets.
@@ -169,16 +169,16 @@ Comme dit précédemment, j'ai dû créer deux modèles, <a target="_blank" href
 - **Modèle Général**
 
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/Tickets/ModeleClassique.png" style="margin-right: 15px; width: 30%">
+  <img src="assets/images/RefonteEspaceClient/Tickets/ModeleClassique.png" style="margin-right: 15px; width: 30%">
   <div>
     <p>
       Dans ce <a target="_blank" href="assets/files/tickets/Tickets [SYMEXO].html">modèle classique</a>, nous avons toutes les actions à part la clôture qui y sont intégrés. Il y a 4 bulles principales, une contenant toutes les informations relatives au ticket, l'autre contenant le suivi, une la demande et enfin la dernière contient les informations de Symexo. Il ya plusieurs bulles de suivi car chacune correspond à une action en particulier.<br> Passons aux exemples :
     </p>
-    <img align=left src="assets/images/Tickets/CreationTicket.png" style="margin-right: 15px; width: 30%">
+    <img align=left src="assets/images/RefonteEspaceClient/Tickets/CreationTicket.png" style="margin-right: 15px; width: 30%">
     <p>
       <a target="_blank" href="assets/files/tickets/1 - Ouverture du Ticket.html">Ici</a>, nous avons créé un ticket, nous avons 3 bulles, une avec les informations de celui-ci, un avec la demande de base et le dernier contenant les informations de Symexo.
     </p>
-    <img align=left src="assets/images/Tickets/SuiviTicket.png" style="margin-right: 15px; width: 30%">
+    <img align=left src="assets/images/RefonteEspaceClient/Tickets/SuiviTicket.png" style="margin-right: 15px; width: 30%">
     <p>
       Quand un ticket est <a target="_blank" href="assets/files/tickets/2 - Suivi Technicien 1.html">mis à jour</a>, il génère un suivi, le suivi a 4 bulles, dans celle qui se rajoute (Suivi), nous avons répertorié tous les suivis de ticket.
     </p>
@@ -186,12 +186,12 @@ Comme dit précédemment, j'ai dû créer deux modèles, <a target="_blank" href
 </div><br>
 
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/Tickets/SuiviTicket2.png" style="margin-right: 15px; width: 30%">
+  <img src="assets/images/RefonteEspaceClient/Tickets/SuiviTicket2.png" style="margin-right: 15px; width: 30%">
   <div>
     <p>
       Quand il y a des messages de différentes personnes (<a target="_blank" href="assets/files/tickets/3 - Suivi Client 1.html">nouveau suivi</a>), ces messages sont différenciés par deux couleurs différentes, chacune attribuée à une personne. Nous pouvons aussi intégrer des images sans perte de qualité du suivi.
     </p>
-    <img align=left src="assets/images/Tickets/SolutionTicket.png" style="margin-right: 15px; width: 30%">
+    <img align=left src="assets/images/RefonteEspaceClient/Tickets/SolutionTicket.png" style="margin-right: 15px; width: 30%">
     <p>
       Quand une <a target="_blank" href="assets/files/tickets/7 - Solution Proposée.html">solution est proposée</a>, le texte dans la bulle "Support" change et la solution est dans une bulle bleue.
     </p>
@@ -201,7 +201,7 @@ Comme dit précédemment, j'ai dû créer deux modèles, <a target="_blank" href
 - **Modèle de Clôture**
 
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/Tickets/ClotureTicket.png" style="margin-right: 15px; width: 30%">
+  <img src="assets/images/RefonteEspaceClient/Tickets/ClotureTicket.png" style="margin-right: 15px; width: 30%">
   <p>
     Quand un ticket est <a target="_blank" href="assets/files/tickets/8 - Clôture du Ticket.html">clôturé</a>, il change beaucoup : dans la bulle "Support", le texte change et une enquête de satisfaction est intégrée ; La bulle du dessous change de nom, maintenant c'est "Solution" et la solution approuvée est affichée dans une bulle verte.
   </p>
@@ -245,13 +245,13 @@ Pour faire en sorte que l'écosystème prenne moins de performances et qu'il soi
 
 Nous avons remplacé Jenkins par les Gitea actions car tout ce que nous avons besoin de faire sur Jenkins (vérifier la compilation et envoyer le code sur Sonarqube et Nexus Repository), nous pouvons le faire avec les Gitea action, pour retirer de la complexité à l'écosystème et économiser en performances ; nous avons choisi de l'abandonner.
 
-<img src="assets/images/UsineLogicielle/Jenkins.png" style="margin-right: 15px; width: 40%">
+<img src="assets/images/RefonteUsineLogicielle/logos/Jenkins.png" style="margin-right: 15px; width: 40%">
 
 ###### Archiva
 
 Archiva n'était tout simplement pas un logiciel que nous pouvions dockeriser, de plus, il est compliqué à mettre à jour et pas très intuitif ni esthétique. Sonatype Nexus, lui, est dockerisable, ce qui fait qu'il est beaucoup plus facile à gérer, de plus il est très intuitif et plutôt joli.
 
-<img src="assets/images/UsineLogicielle/Archiva.png" style="margin-right: 15px; width: 35%">
+<img src="assets/images/RefonteUsineLogicielle/logos/Archiva.png" style="margin-right: 15px; width: 35%">
 
 ##### Pourquoi tout dockeriser ?
 
@@ -267,19 +267,19 @@ Pour faire fonctionner tout cet écosystème correctement et rendre une bonne ex
 
 <a href="src/HTML/RefonteUsineLogicielle/Docker.html" target="_blank">Docker</a>, comme vu précédemment, est un outil de conteneurisation de logiciel, il permet d'exécuter chaque logiciels indépendamment avec d'installé seulement ce que le logiciel à besoin, ce qui optimise la consommation de ressource par logiciels. De plus, il sécurise chaque applications car, sauf si elles y sont autorisées, elles ne peuvent pas communiquer ensemble ; Aussi, chaque applications ont leurs volumes personnels dans lesquels elles vont pouvoir stocker toutes leur données, ce qui simplifie la gestions de celles-ci.
 
-<img src="assets/images/UsineLogicielle/Docker.png" style="margin-right: 15px; width: 20%">
+<img src="assets/images/RefonteUsineLogicielle/logos/Docker.png" style="margin-right: 15px; width: 20%">
 
 ##### <a href="src/HTML/RefonteUsineLogicielle/Portainer.html" target="_blank">Portainer</a>
 
 <a href="src/HTML/RefonteUsineLogicielle/Portainer.html" target="_blank">Portainer</a> est un outil permettant de centraliser et de gérer tout un environnement docker (stacks (compose), images, conteneurs, volumes, networks) dans une application Web graphique et intuitive. C'est le deuxième logiciel de base à installer après docker pour que notre usine logicielle fonctionne correctement. D'ailleurs, ce logiciel tourne aussi dans un conteneur !
 
-<img src="assets/images/UsineLogicielle/Portainer.png" style="margin-right: 15px; width: 30%">
+<img src="assets/images/RefonteUsineLogicielle/logos/Portainer.png" style="margin-right: 15px; width: 30%">
 
 ##### <a href="src/HTML/RefonteUsineLogicielle/NginxProxyManager.html" target="_blank">Nginx Proxy Manager</a>
 
 <a href="src/HTML/RefonteUsineLogicielle/NginxProxyManager.html" target="_blank">Nginx Proxy Manager</a> nous a permis de rendre l’expérience utilisateur plus agréable, mais surtout plus sécurisée. Grâce à ce logiciel, à un DNS configuré  précédemment et un certificat SSL valide, nous avons pu donner à notre application web à laquelle nous pouvions de base accéder via son ip, un nom de domaine ! Par exemple, pour accéder à Gitea, au lieu d'aller sur http://10.2.1.70:3000 *(adresse IP factice)* nous pouvions aller sur https://code-repo.symexo.com, de même pour SonarQube : https://code-quality.symexo.com et enfin pour Nexus Repository : https://code-artifacts.symexo.com. Aussi, grâce au proxy, les applications seront protégées des attaques directes, celui-ci jouera le role du garde de la porte vers chaque applications, personne ne pourra directement accéder à celles-ci. Ce logiciel est à configurer en suivant de l'installation de Gitea, SonarQube et Nexus Repository.
 
-<img src="assets/images/UsineLogicielle/NginxProxyManager.png" style="margin-right: 15px; width: 30%">
+<img src="assets/images/RefonteUsineLogicielle/logos/NginxProxyManager.png" style="margin-right: 15px; width: 30%">
 
 <a name="LogicielsPrincipaux"></a>
 
@@ -289,19 +289,19 @@ Pour faire fonctionner tout cet écosystème correctement et rendre une bonne ex
 
 <a href="src/HTML/RefonteUsineLogicielle/Gitea.html" target="_blank">Gitea</a> est un instance de Git parmi tant d'autres, nous pouvons par exemple la comparer à GitHub ou à GitLab ou même à BitBucket. La raison pour laquelle nous l'avons choisi est que ce logiciel est open source et que nous pouvons l'héberger en local, ce qui garanti une sécurité de nos données et de celles nos clients ; Aussi, nous ne dépendons pas d'internet, tout ce que nous avons besoin pour travailler est un réseau local fonctionnel.
 
-<img src="assets/images/UsineLogicielle/Gitea.png" style="margin-right: 15px; width: 30%">
+<img src="assets/images/RefonteUsineLogicielle/logos/Gitea.png" style="margin-right: 15px; width: 30%">
 
 ##### <a href="src/HTML/RefonteUsineLogicielle/SonarQube.html" target="_blank">SonarQube</a>
 
 <a href="src/HTML/RefonteUsineLogicielle/SonarQube.html" target="_blank">SonarQube</a> est un outil de vérification de qualité de code, via des algorithmes propres à chaque langage, il va déterminer la qualité (soit la complexité, les mauvaises pratique, la duplication de code et les bugs/vulnérabilités potentiels) de celui-ci. Une fois les vérifications faites, grâce à l’extension "SonarLint" disponible sur VsCode, il va nous avertir des différents problèmes que nous pourrions résoudre dans notre code. C'est vraiment un très bon outil pour continuer à fournir un code de qualité à nos clients !
 
-<img src="assets/images/UsineLogicielle/SonarQube.png" style="margin-right: 15px; width: 30%">
+<img src="assets/images/RefonteUsineLogicielle/logos/SonarQube.png" style="margin-right: 15px; width: 30%">
 
 ##### <a href="src/HTML/RefonteUsineLogicielle/SonatypeNexusRepositoryManager.html" target="_blank">Sonatype Nexus Repository Manager</a>
 
 <a href="src/HTML/RefonteUsineLogicielle/SonatypeNexusRepositoryManager.html" target="_blank">Sonatype Nexus Repository Manager</a> est un espace de stockage des artefacts que va produire votre code, que ce soit les librairies (.jar/.a) ou les fichiers de configuration (xml/.h). Nous avons créer sur ce logiciel un groupe symexo contenant un dépôt "Proxy" qui va nous permettre d'aller chercher les dépendances sur un dépôt en ligne définit si celles-ci ne sont pas disponible dans les autres dépôts du groupe. En ce qui concerne les dépôts locals, nous en avons configurer deux, un pour les releases et un pour les snapshots.
 
-<img src="assets/images/UsineLogicielle/Nexus.png" style="margin-right: 15px">
+<img src="assets/images/RefonteUsineLogicielle/logos/Nexus.png" style="margin-right: 15px">
 
 <a name="DeroulementInstallation"></a>
 
@@ -412,7 +412,7 @@ services:
 - Après avoir fini de configurer Gitea, j'ai dû enregistrer ma clé SSH pour pouvoir envoyer du code dessus.
 
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/UsineLogicielle/Gitea/SSH.png" style="margin-right: 15px; width: 70%">
+  <img src="assets/images/RefonteUsineLogicielle/Gitea/SSH.png" style="margin-right: 15px; width: 70%">
   <div>
     <p>C'est dans ce menu que j'ai pu configurer ma clé SSH</p>
     <p class="info-zone">Pour plus d'informations, vous pouvez vous rendre sur la <a href="src/HTML/RefonteUsineLogicielle/Gitea.html">documentation associée</a></p>
@@ -457,7 +457,7 @@ services:
 
 <br>
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/UsineLogicielle/Gitea/RunnerToken.png" style="margin-right: 15px; width: 70%">
+  <img src="assets/images/RefonteUsineLogicielle/Gitea/RunnerToken.png" style="margin-right: 15px; width: 70%">
   <p class="info-zone"> Pour récupérer le token j'ai dû me rendre dans le menu des exécuteurs sur Gitea et le récupérer en cliquant sur "Créer un nouvel exécuteur". Tout est détaillé sur la <a href="src/HTML/RefonteUsineLogicielle/Gitea.html">documentation</a> tout en bas.</p>
 </div>
 <br>
@@ -517,7 +517,7 @@ volumes:
 
 <br>
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/UsineLogicielle/SonarQube/Token.png" style="margin-right: 15px; width: 70%">
+  <img src="assets/images/RefonteUsineLogicielle/SonarQube/Token.png" style="margin-right: 15px; width: 70%">
   <p class="info-zone">Dans cette fenêtre, j'ai pu créer mon token en renseignant le nom, le type et le temps d'expiration de celui-ci</p>
 </div>
 <br>
@@ -526,8 +526,8 @@ volumes:
 
 <br>
 <div style="display: flex; align-items: flex-start;">
-  <img src="assets/images/UsineLogicielle/SonarQube/Projects.png" style="margin-right: 15px; width: 34.5%">
-  <img src="assets/images/UsineLogicielle/SonarQube/Projects.png" style="margin-right: 15px; width: 34.5%">
+  <img src="assets/images/RefonteUsineLogicielle/SonarQube/Projects.png" style="margin-right: 15px; width: 34.5%">
+  <img src="assets/images/RefonteUsineLogicielle/SonarQube/Projects.png" style="margin-right: 15px; width: 34.5%">
   Et comme mon code est parfait, il n'y a aucun problème :) (Si seulement c'était le miens...)
 </div>
 <br>
@@ -561,7 +561,7 @@ volumes:
 
 - Une fois le logiciel lancé, il faut se connecter, et quand on se connecte pour la première fois il faut aller chercher le mot de passe  un endroit spécifique sur le système (conteneur). Pour cela j'ai dû entrer dans le conteneur et aller chercher le mot de passe au bon emplacement.
 
-<img src="assets/images/UsineLogicielle/Sonatype/Home.png" style="margin-right: 15px; width: 70%">
+<img src="assets/images/RefonteUsineLogicielle/Sonatype/Home.png" style="margin-right: 15px; width: 70%">
 
 - Quand je me suis connecté, je suis allé créer plusieurs choses :
   - Un dépôt "releases" qui va me permettre de stocker seulement les versions finies.
@@ -569,7 +569,7 @@ volumes:
   - Un dépôt "Proxy", celui-ci va se charger d'aller chercher les dépendances sur un dépôt en ligne si celle que je demande ne sont pas dans le dépôts du groupe
   - Un groupe dans lequel j'ai mis les 3 dépôts précédents.
 
-<img src="assets/images/UsineLogicielle/Sonatype/Repos.png" style="margin-right: 15px; width: 70%">
+<img src="assets/images/RefonteUsineLogicielle/Sonatype/Repos.png" style="margin-right: 15px; width: 70%">
 <br>
 <br>
 
@@ -601,7 +601,7 @@ Le Workflow va permettre d'exécuter différents test, de stocker et d'analyser 
 ##### Fonctionnement de l'écosystème
 
 <br>
-<img src="assets/images/UsineLogicielle/Ecosysteme/Fonctionnement.png" style="margin-right: 15px; width: 70%">
+<img src="assets/images/RefonteUsineLogicielle/Ecosysteme/Fonctionnement.png" style="margin-right: 15px; width: 70%">
 <br>
 
 1) Le code est **Push sur Gitea**
