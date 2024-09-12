@@ -32,7 +32,7 @@ mkdir mon_dossier
 
 Une combinaison de toutes ces commandes pourrait donner ça :
 
-<img src="../../assets/images/Bash/TestCommandes.png" style="margin-right: 15px; width: 70%">
+<img src="../../../assets/images/Doc/Bash/TestCommandes.png" style="margin-right: 15px; width: 70%">
 
 ## Scripts ?
 

@@ -96,12 +96,12 @@ Dans ce service, j’ai pu participer à différents de projets dont deux princi
 
 Langages/Outils Utilisés | Description
 -|-
-HTML | Création de documents, souvent des pages Web
-CSS | Mise en forme de documents HTML
-GLPI | (Gestionnaire Libre de Parc Informatique), logiciel de gestion des services/parcs informatiques
-Balises GLPI | Balises de conditionnalité et de récupération d'informations
-Visiativ Process | Logiciel d'automatisation et gestion de processus métier
-JAVA | langage de programmation polyvalent, utilisé pour développer une large gamme d'applications et de systèmes.
+<a href="src/HTML/RefonteEspaceClient/HTML.html" target="_blank">HTML</a> | Création de documents, souvent des pages Web
+<a href="src/HTML/RefonteEspaceClient/CSS.html" target="_blank">CSS</a> | Mise en forme de documents HTML
+<a href="src/HTML/RefonteEspaceClient/GLPI.html" target="_blank">GLPI</a> | (Gestionnaire Libre de Parc Informatique), logiciel de gestion des services/parcs informatiques
+<a href="src/HTML/RefonteEspaceClient/BalisesGLPI.html" target="_blank">Balises GLPI</a> | Balises de conditionnalité et de récupération d'informations
+<a href="src/HTML/RefonteEspaceClient/VisiativProcess.html" target="_blank">Visiativ Process</a> | Logiciel d'automatisation et gestion de processus métier
+<a href="src/HTML/RefonteEspaceClient/JAVA.html" target="_blank">JAVA</a> | langage de programmation polyvalent, utilisé pour développer une large gamme d'applications et de systèmes.
 
 Quand un client **commande du Matériel**, nous devons lui **livrer**, pour cela nous devons **remplir un bon de livraison** puis des **fiches de livraison** avec les informations le concernant. Avant, les informations étaient **rentrées à la main**, maintenant, les fiches de livraisons sont **générées automatiquement** à partir du bon de livraison.
 

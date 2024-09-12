@@ -4,7 +4,7 @@
 
 Gitea Actions est un système d'intégration continue (CI) et d'automatisation des tâches, similaire à GitHub Actions, mais spécifiquement conçu pour le logiciel Gitea.
 
-![alt text](../../assets/images/Gitea/Actions/DevOps.png)
+![alt text](../../../assets/images/Doc/Actions/DevOps.png)
 
 ## Ça sert à quoi ?
 
